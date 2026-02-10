@@ -26,10 +26,10 @@ Partial Class Form2
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -44,7 +44,7 @@ Partial Class Form2
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(591, 61)
+        Me.Panel1.Size = New System.Drawing.Size(894, 61)
         Me.Panel1.TabIndex = 0
         '
         'Label1
@@ -76,19 +76,30 @@ Partial Class Form2
         Me.Panel2.Controls.Add(Me.TextBox2)
         Me.Panel2.Controls.Add(Me.TextBox1)
         Me.Panel2.Controls.Add(Me.Button1)
-        Me.Panel2.Location = New System.Drawing.Point(28, 86)
+        Me.Panel2.Location = New System.Drawing.Point(180, 189)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(535, 296)
         Me.Panel2.TabIndex = 1
         '
-        'Button1
+        'Label2
         '
-        Me.Button1.Location = New System.Drawing.Point(412, 232)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "LOG IN"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(20, 20)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(192, 55)
+        Me.Label2.TabIndex = 2
+        Me.Label2.Text = "LOG IN"
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.25!)
+        Me.TextBox2.Location = New System.Drawing.Point(238, 181)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.TextBox2.Size = New System.Drawing.Size(258, 27)
+        Me.TextBox2.TabIndex = 1
         '
         'TextBox1
         '
@@ -98,22 +109,14 @@ Partial Class Form2
         Me.TextBox1.Size = New System.Drawing.Size(258, 27)
         Me.TextBox1.TabIndex = 1
         '
-        'TextBox2
+        'Button1
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.25!)
-        Me.TextBox2.Location = New System.Drawing.Point(238, 181)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(258, 27)
-        Me.TextBox2.TabIndex = 1
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(7, 18)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(39, 13)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Label2"
+        Me.Button1.Location = New System.Drawing.Point(421, 243)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 0
+        Me.Button1.Text = "LOG IN"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Form2
         '
@@ -122,7 +125,7 @@ Partial Class Form2
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackgroundImage = Global.WindowsApplication1.My.Resources.Resources.logo_revuelto
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(591, 401)
+        Me.ClientSize = New System.Drawing.Size(894, 606)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
